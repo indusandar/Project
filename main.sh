@@ -10,8 +10,7 @@ sentence="He drinks milk"
 output="./"
 while getopts m:p:s:a:l:e:n:t:o: option
 do
-case "${option}"
-in
+case "${option}" in
 m) mode=${OPTARG};;
 p) mph=${OPTARG};;
 s) dsp=${OPTARG};;
